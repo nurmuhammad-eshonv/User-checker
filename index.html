@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User-checker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="p-10 margin my-0 mx-auto">
+    <div class="wrapper border-solid border-none border-sky-500 flex gap-9 my-0 mx-auto bg-teal-300 rounded-2xl pl-20 pt-2">
+      <img class="w-10 h-10 absolute border w-20 h-20 rounded-2xl border-teal-700 ml-20 bg-red -mt-10" src="./images/user.png" alt="">
+
+      <form action="">
+        <h3 class="text-xl mb-4"></h3>
+        <label for="name" class="mb-4 block">
+          <span class="block text-2xl text-black mb-1 mt-20">User Name</span>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter UserName""
+            class="pl-11 text-lg padborder-none border-red-400 focus:outline-yellow-400 rounded-xl w-full h-10 "
+          />
+          <img src="./images/user.png" class="w-6 absolute -mt-8 ml-3 " alt="">
+        </label>
+        <label for="image" class="mb-4 block">
+          <span class="block text-2xl text-black mb-1">User-image</span>
+          <input
+            type="url"
+            id="image"
+            placeholder="Enter url-img"
+            class="pl-11 text-lg padborder-none border-red-400 focus:outline-yellow-400 rounded-xl w-full h-10 "
+          />
+          <img src="./images/image-regular.svg" class="w-6 absolute -mt-8 ml-3" alt="">
+
+        </label>
+        <label for="number" class="mb-4 block">
+          <span class="block text-2xl text-black mb-1">Phone-number</span>
+          <input
+            type="number"
+            id="number"
+            placeholder="Enter Phone-number"
+            class="pl-11 text-lg padborder-none border-red-400 focus:outline-yellow-400 rounded-xl w-full h-10 "
+          />
+          <img src="./images/phone-solid.svg" class="w-6 absolute -mt-8 ml-3" alt="">
+
+        </label>
+        <label for="email" class="mb-4 block">
+          <span class="block text-2xl text-black mb-1">Email</span>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Email"
+            class="pl-11 text-lg padborder-none border-red-400 focus:outline-yellow-400 rounded-xl w-full h-10 "
+          />
+          <img src="./images/envelope-solid.svg" class="w-6 absolute -mt-8 ml-3" alt="">
+
+        </label>
+        <button
+          class="border-2 p-2 pl-5 pr-5 rounded bg-red-800 text-white hover:bg-black ease-in duration-300 w-full mb-5 mt-5"
+        >
+          SUBMIT
+        </button>
+      </form>
+    </div>
+    <ul class="list-disc w-80 bg-lime-500 rounded-2xl mu-0 mx-auto mt-20 decoration-none  p-10">
+      <template class="mt-90 ">
+        <li>
+          <img src="https://picsum.photos/300/100" alt="" />
+          <h3 class=" text-1xl text-black mb-1 mt-5">Name:Nurmuhammad</h3>
+          <p class="tel text-1xl text-black mb-1 mt-5">Tel:999399</p>
+          <p class="email text-1xl text-black mb-1 mt-5">Email: dsahdiuh@gmail.com</p>
+        </li>
+      </template>
+    </ul>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
